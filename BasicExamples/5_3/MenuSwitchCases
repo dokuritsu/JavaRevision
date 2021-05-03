@@ -1,0 +1,70 @@
+import java.util.*;
+
+public class Test{
+
+    /*  Menu Based Example with Switch Cases
+    
+    */
+     public static void main(String []args){
+        
+        Scanner scan = new Scanner(System.in);
+         
+        boolean exit = false;
+        while(!exit){
+            System.out.println("Please enter you choice from the options shown below: ");
+            System.out.println("1. Addition" + "\n2. Substraction" + "\n3. Multiplication" + "\n4. Division" + "\n5. Exit");
+            int choice = scan.nextInt();
+            
+            System.out.println("Your choice was: " + choice);
+            
+            int num1;
+            int num2;
+            int result;
+            
+            switch (choice){
+                case 1:
+                    System.out.println("Good choice. Please input two numbers.");
+                    num1 = scan.nextInt();
+                    num2 = scan.nextInt();
+                    System.out.println("Your numbers are: " + num1 + " and " + num2);
+                    result = num1 + num2;
+                    System.out.println("The result is: " + result + "\n");
+                    break;
+                case 2:
+                    System.out.println("Good choice. Please input two numbers.");
+                    num1 = scan.nextInt();
+                    num2 = scan.nextInt();
+                    System.out.println("Your numbers are: " + num1 + " and " + num2);
+                    result = num1 - num2;
+                    System.out.println("The result is: " + result + "\n");
+                    break;
+                case 3:
+                    System.out.println("Good choice. Please input two numbers.");
+                    num1 = scan.nextInt();
+                    num2 = scan.nextInt();
+                    System.out.println("Your numbers are: " + num1 + " and " + num2);
+                    result = num1*num2;
+                    System.out.println("The result is: " + result + "\n");
+                    break;
+                case 4:
+                    System.out.println("Good choice. Please input two numbers.");
+                    num1 = scan.nextInt();
+                    num2 = scan.nextInt();
+                    System.out.println("Your numbers are: " + num1 + " and " + num2);
+                    result = num1/num2;
+                    System.out.println("The result is: " + result + "\n");
+                    break;
+                case 5:
+                    exit = true;
+                    System.out.println("Exiting..." + "\n");
+                    break;
+                default:
+                    System.out.println("Please select one of the choice above.");
+            }
+            
+        }
+        
+        // Close the scanner
+        scan.close();
+     }
+}
