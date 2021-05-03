@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class BasicExampleThree{
+
+    /*  Examples of control
+        if
+        if else
+    */
+     public static void main(String []args){
+        // scenario: checking if a number is odd or even
+        
+        // Implement scanner
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter a number you wish to verify: ");
+        int num = scan.nextInt();
+        
+        // implment control logic
+        if(num%2 == 0){
+            System.out.println("The number you have entered is even.");
+        } else {
+            System.out.println("The number you have entered is odd.");
+        }
+     }
+}
