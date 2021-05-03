@@ -1,0 +1,26 @@
+public class BasicExampleTwo{
+
+    /* Division of two numbers
+            int
+            double
+            mix
+    */
+     public static void main(String []args){
+        // int
+        int a = 10;
+        int b = 2;
+        int c = a/b;
+        
+        // double
+        double d = 10.0;
+        double e = 2.0;
+        double f = d/e;
+        
+        // results
+        System.out.println("Dividing two integers: " + c);
+        System.out.println("Dividing two doubles: " + f);
+        System.out.println("Mixing. Integer divided by double: " + a/e);
+        System.out.println("Mixing. Double divided by integer: " + d/b);
+        
+     }
+}
