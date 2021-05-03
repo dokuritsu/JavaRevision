@@ -1,0 +1,12 @@
+import java.util.*;
+import java.io.*;
+
+public class BasicExampleOne{
+
+    /*  Software Installation
+        imports?
+    */
+     public static void main(String []args){
+        System.out.println("Hello World");
+     }
+}
