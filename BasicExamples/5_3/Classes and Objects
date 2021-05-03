@@ -1,0 +1,57 @@
+public class BasicExampleFour{
+
+    /* Classes and objects example
+        Book
+    */
+     public static void main(String []args){
+         // Creating objects
+        Book a = new Book();
+        Book b = new Book("Harry Potter and the Order of Phoenix", "J.K Rowling");
+        Book c = a;
+        
+        // Accessing object data
+        a.setName("Eragon");
+        a.setAuthor("Christopher Paolini");
+        System.out.println("Book a name: " + a.getName());
+        System.out.println("Book a author: " + a.getAuthor());
+        System.out.println("Book c name: " + c.getName());
+        System.out.println("Book c author: " + c.getAuthor());
+        System.out.println("BOok b: " + b.getName() + " " + b.getAuthor());
+        
+        
+     }
+}
+
+class Book{
+    
+    public Book(){
+        this.name = "";
+        this.author = "";
+    }
+    
+    public Book(String name, String author){
+        this.name = name;
+        this.author = author;
+    }
+    
+    // Values
+    private String name;
+    private String author;
+    
+    // Method getters and setters
+    public String getName(){
+        return name;
+    }
+    
+    public String getAuthor(){
+        return author;
+    }
+    
+    public void setName(String newName){
+        this.name = newName;
+    }
+    
+    public void setAuthor(String newAuthor){
+        this.author = newAuthor;
+    }
+}
