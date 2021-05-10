@@ -1,0 +1,48 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context = "http://www.springframework.org/schema/context"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context.xsd">
+
+   <bean id="javaCollection" class="com.capgemini.firstspingproject.JavaCollection">
+      <property name="addressList">
+         <list>
+            <value>Chicago</value>
+            <value>New York</value>
+            <value>USA</value>
+            <value>USA</value>
+         </list>
+      </property>
+      <property name="addressSet">
+         <list>
+            <value>Chicago</value>
+            <value>New York</value>
+            <value>USA</value>
+            <value>USA</value>
+         </list>
+      </property>
+      <property name="addressMap">
+         <map>
+            <entry key="1" value="Chicago"/>
+            <entry key="2" value="New York"/>
+            <entry key="3" value="USA"/>
+            <entry key="4" value="USA"/>
+         </map>
+      </property>
+      <property name="addressProp">
+         <props>
+            <prop key="one">Chicago</prop>
+            <prop key="one">Chicago</prop>
+            <prop key="two">New York</prop>
+            <prop key="three">USA</prop>
+            <prop key="four">USA</prop>
+         </props>
+      </property>
+   </bean>
+   
+   
+</beans>
